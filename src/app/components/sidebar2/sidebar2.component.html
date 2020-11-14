@@ -1,0 +1,179 @@
+<div class="sidebar_inner widget_area_inner">
+    <aside class="widget_number_1 widget widget_birthdays">
+        <h5 class="widget_title">Proximos Cumpleaños</h5>
+        <div class="widget_birthdays_inner" *ngFor="let personasCumpleano of personasCumpleanos">
+            <ul>
+                <li>
+                    <div class="post_thumb">
+                        <img src="assets/FOTOS/{{personasCumpleano.Cedula}}.PNG" class="avatar photo" width="96" height="96" alt="" />
+                    </div>
+                    <div class="post_title">
+                        <strong>{{personasCumpleano.Nombre}} {{personasCumpleano.Apellido}}</strong>
+                        <span class="date">{{personasCumpleano.Fecha_Nacimiento | date :'MMM dd' }}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <aside class="widget widget_nav_menu">
+        <h5 class="widget_title">Accesos Directos</h5>
+        <div class="menu-sidebar-menu-container">
+            <ul id="menu-sidebar-menu" class="menu">
+                <li><a href="#">WORKMANAGER</a></li>
+                <li><a href="#">GOSEM</a></li>
+                <li><a href="#">VTIGER</a></li>
+                <li><a href="#">INDEED</a></li>
+                <li><a href="https://www.launivirtual.edu.co/login/index.php">UNIVIRTUAL</a></li>
+                <li><a href="http://www.unisabaneta.edu.co/">WEB UNISABANETA</a></li>
+                <li><a href="http://academico.unisabaneta.edu.co/">SAG ACADEMICO</a></li>
+            </ul>
+        </div>
+    </aside>
+    <aside class="widget widget_bp_core_whos_online_widget buddypress widget">
+        <h5 class="widget_title">Ultimas Conexiones</h5>
+        <div class="widget-error">Actualmente no hay nadie conectado </div>
+    </aside>
+    <aside class="widget_number_4 widget widget_text">
+        <div class="textwidget">
+            <div class="sc_infobox sc_infobox_style_regular">
+                <span class="sc_icon icon-rocket aligncenter"></span>
+                <h5 class="sc_title sc_title_regular sc_align_center">Accesos Hoy</h5>
+                <h2 class="sc_title sc_title_regular sc_align_center">167</h2>
+            </div>
+        </div>
+    </aside>
+    <aside class="widget widget_recent_posts">
+        <h5 class="widget_title">Actividad Reciente&nbsp;</h5>
+        <article class="post_item with_thumb first">
+            <div class="post_thumb">
+                <img alt="" src="assets/images/1000.png">
+            </div>
+            <div class="post_content">
+                <h6 class="post_title">
+                    <a href="single-post.html">Nuevo formato x cargado.</a>
+                </h6>
+                <div class="post_info">
+                    <span class="post_info_item post_info_posted">
+                        <a href="single-post.html" class="post_info_date">Septiembre 24, 2020</a>
+                     </span>
+                    <span class="post_info_item post_info_posted_by">Por
+                        <a href="single-team.html" class="post_info_author">Valeria</a>
+                     </span>
+                    <span class="post_info_item post_info_counters">
+                        <a href="single-post.html" class="post_counters_item">
+                           <span class="post_counters_number"></span>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <article class="post_item with_thumb">
+            <div class="post_thumb">
+                <img alt="" src="assets/images/1000.png">
+            </div>
+            <div class="post_content">
+                <h6 class="post_title">
+                    <a href="single-post.html">Presentación: Institucional.</a>
+                </h6>
+                <div class="post_info">
+                    <span class="post_info_item post_info_posted">
+                        <a href="single-post.html" class="post_info_date">Septiembre 22, 2020</a>
+                     </span>
+                    <span class="post_info_item post_info_posted_by">Por
+                        <a href="single-team.html" class="post_info_author">Victor</a>
+                     </span>
+                    <span class="post_info_item post_info_counters">
+                        <a href="single-post.html" class="post_counters_item">
+                           <span class="post_counters_number"></span>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <article class="post_item with_thumb">
+            <div class="post_thumb">
+                <img alt="" src="assets/images/1000.png">
+            </div>
+            <div class="post_content">
+                <h6 class="post_title">
+                    <a href="single-post.html">Actualizacion plan de Gimnasio.</a>
+                </h6>
+                <div class="post_info">
+                    <span class="post_info_item post_info_posted">
+                        <a href="single-post.html" class="post_info_date">Septiembre 10, 2020</a>
+                     </span>
+                    <span class="post_info_item post_info_posted_by">Por
+                        <a href="single-team.html" class="post_info_author">Admin Gym</a>
+                     </span>
+                    <span class="post_info_item post_info_counters">
+                        <a href="single-post.html" class="post_counters_item">
+                          <span class="post_counters_number"></span>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <article class="post_item with_thumb">
+            <div class="post_thumb">
+                <img alt="" src="assets/images/1000.png">
+            </div>
+            <div class="post_content">
+                <h6 class="post_title">
+                    <a href="single-post.html">Nuevas vacantes activas.</a>
+                </h6>
+                <div class="post_info">
+                    <span class="post_info_item post_info_posted">
+                        <a href="single-post.html" class="post_info_date">Septiembre 8, 2020</a>
+                     </span>
+                    <span class="post_info_item post_info_posted_by">Por
+                        <a href="single-team.html" class="post_info_author">Valeria</a>
+                     </span>
+                    <span class="post_info_item post_info_counters">
+                        <a href="single-post.html" class="post_counters_item">
+                           <span class="post_counters_number"></span>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <article class="post_item with_thumb">
+            <div class="post_thumb">
+                <img alt="" src="assets/images/1000.png">
+            </div>
+            <div class="post_content">
+                <h6 class="post_title">
+                    <a href="single-post.html">Convocatoria Futsal Administrativos</a>
+                </h6>
+                <div class="post_info">
+                    <span class="post_info_item post_info_posted">
+                        <a href="single-post.html" class="post_info_date">Septiembre 1, 2020</a>
+                     </span>
+                    <span class="post_info_item post_info_posted_by">Por
+                        <a href="single-team.html" class="post_info_author">Admin GYM</a>
+                     </span>
+                    <span class="post_info_item post_info_counters">
+                        <a href="single-post.html" class="post_counters_item">
+                           <span class="post_counters_number"></span>
+                    </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+    </aside>
+    <aside class="widget_number_6 widget widget_text">
+        <div class="textwidget">
+            <div class="sc_infobox sc_infobox_style_regular style_2">
+                <span class="sc_icon icon-communication1 aligncenter color_blue"></span>
+                <h5 class="sc_title sc_title_regular sc_align_center">Total de Usuarios</h5>
+                <h2 class="sc_title sc_title_regular sc_align_center">58</h2>
+            </div>
+            <div class="sc_infobox sc_infobox_style_error sc_infobox_closeable">
+                <span class="sc_icon icon-sound aligncenter"></span>
+                <h5 class="sc_title sc_title_regular sc_align_center">Recordatorio</h5>
+                <p>SIN SERVICIO DE INTERNET EL
+                    <br> 31.10.2020
+                </p>
+            </div>
+        </div>
+    </aside>
+</div>
