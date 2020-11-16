@@ -2,6 +2,8 @@
 //modulos de la aplicación
 import { EquipoModule } from './pages/equipo/equipo.module';
 import { InicioModule } from './pages/inicio/inicio.module';
+import {EmpleoModule  } from "./pages/empleo/empleo.module";
+import {ArchivosModule  } from "./pages/archivos/archivos.module";
 //httpClientModulo
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,6 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     EquipoModule,
     HttpClientModule,
     ComponentsModule,
+    EmpleoModule,
+    ArchivosModule,
     NgbModule
     
   ],

@@ -6,13 +6,15 @@ import { FacultadIngenieriaComponent } from './facultad-ingenieria/facultad-inge
 import { FacultadCienciasEmpresarialesComponent } from './facultad-ciencias-empresariales/facultad-ciencias-empresariales.component';
 import { FacultadDerechoComponent } from './facultad-derecho/facultad-derecho.component';
 import { ComponentsModule } from './../../components/components.module';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 @NgModule({
   declarations: [AdministracionComponent, FacultadIngenieriaComponent, FacultadCienciasEmpresarialesComponent, FacultadDerechoComponent],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    AppRoutingModule
   ],
   exports: [
     AdministracionComponent,

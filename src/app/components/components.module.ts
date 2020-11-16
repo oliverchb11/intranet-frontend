@@ -4,6 +4,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { EmpleoModule } from '../pages/empleo/empleo.module';
 
 
 
@@ -12,7 +14,7 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [SidebarComponent, NavbarComponent, Sidebar2Component, FooterComponent],
   imports: [
     CommonModule,
-  
+    AppRoutingModule,
   ],
   exports:[
     SidebarComponent,

@@ -2,7 +2,7 @@ import { ComponentsModule } from './../../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio.component';
-import { NgbDatepickerModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbDatepickerModule , NgbProgressbarModule} from "@ng-bootstrap/ng-bootstrap";
 import { FormsModule } from "@angular/forms";  
 
 @NgModule({
@@ -11,7 +11,8 @@ import { FormsModule } from "@angular/forms";
     CommonModule,
     ComponentsModule,
     NgbDatepickerModule,
-    FormsModule
+    FormsModule,
+    NgbProgressbarModule
   ],
   exports:[
     InicioComponent
