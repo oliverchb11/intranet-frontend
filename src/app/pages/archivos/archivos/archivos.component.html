@@ -20,36 +20,37 @@
                                     <div id="sc_tabs_559" class="sc_tabs sc_tabs_style_3" data-active="0">
                                         <ul class="sc_tabs_titles">
                                             <li class="sc_tabs_title">
-                                                <a style="cursor: pointer;" href="#sc_tab_119_1_15" class="theme_button" id="sc_tab_119_1_15_tab">FORMATOS CAD</a>
+                                                <a style="cursor: pointer;" (click)="openCad(contentCad)" class="theme_button" id="sc_tab_119_1_15_tab">FORMATOS CAD</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_119_2_67" class="theme_button" id="sc_tab_119_2_67_tab">FORMATOS TALENTO HUMANO</a>
+                                                <a style="cursor: pointer;" (click)="openTalento(contentTalento)" class="theme_button" id="sc_tab_119_2_67_tab">FORMATOS TALENTO HUMANO</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_552_8" class="theme_button" id="sc_tab_552_8_tab">FORMATOS CDT</a>
+                                                <a style="cursor: pointer;" (click)="openCdt(contentCdt)" class="theme_button" id="sc_tab_552_8_tab">FORMATOS CDT</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_557_8" class="theme_button" id="sc_tab_557_8_tab">FORMATOS MERCADEO</a>
+                                                <a style="cursor: pointer;" (click)="openMercadeo(contenMercadeo)" class="theme_button" id="sc_tab_557_8_tab">FORMATOS MERCADEO</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_979_10" class="theme_button" id="sc_tab_979_10_tab">FORMATOS RECREACIÓN</a>
+                                                <a style="cursor: pointer;" (click)="openRecreacion(contentRecreacion)" class="theme_button" id="sc_tab_979_10_tab">FORMATOS RECREACIÓN</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_134_3" class="theme_button" id="sc_tab_134_3_tab">FORMATOS PLANEACIÓN</a>
+                                                <a style="cursor: pointer;" (click)="openPlaneacion(contentPlaneacion)" class="theme_button" id="sc_tab_134_3_tab">FORMATOS PLANEACIÓN</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_023_2" class="theme_button" id="sc_tab_023_2_tab">OTROS FORMATOS</a>
+                                                <a style="cursor: pointer;" (click)="openOtros(contentOtros)" class="theme_button" id="sc_tab_023_2_tab">OTROS FORMATOS</a>
                                             </li>
                                         </ul>
-                                        <div id="sc_tab_119_1_15" class="sc_tabs_content">
+                                        <ng-template #contentCad class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">CAD</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
                                             </div>
-                                            <a href="assets/images/resume-example-for-web-designers.pdf" class="sc_icon icon-download alignright"></a>
+
+                                            <a href="assets/images/resume-example-for-web-designers.pdf" id="sc_icon" class="sc_icon icon-download  alignright"></a>
                                             <h6 class="sc_title sc_title_regular odd">DOCUMENT/ PDF</h6>
                                             <h6 class="sc_title sc_title_regular even">
-                                                <a href="assets/images/resume-example-for-web-designers.pdf">Business School Admissions:</a>
+                                                <a href="assets/images/resume-example-for-web-designers.pdf " target="_blank">Business School Admissions:</a>
                                             </h6>
                                             <div class="wpb_text_column wpb_content_element">
                                                 <div class="wpb_wrapper">
@@ -78,16 +79,16 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_119_2_67" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contentTalento id="sc_tab_119_2_67" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">TALENTO HUMANO</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
                                             </div>
-                                            <a href="assets/images/resume-example-for-web-designers.pdf" class="sc_icon icon-download alignright"></a>
+                                            <a href="assets/images/SOLICITUD PERMISO LABORAL UNISABANETA.pdf" class="sc_icon icon-download alignright"></a>
                                             <h6 class="sc_title sc_title_regular odd">DOCUMENT/ PDF</h6>
                                             <h6 class="sc_title sc_title_regular even">
-                                                <a href="assets/images/resume-example-for-web-designers.pdf">Business School Admissions:</a>
+                                                <a href="assets/images/SOLICITUD PERMISO LABORAL UNISABANETA.pdf" target="_blank">SOLICITUD PERMISO LABORAL UNISABANETA:</a>
                                             </h6>
                                             <div class="wpb_text_column wpb_content_element">
                                                 <div class="wpb_wrapper">
@@ -116,8 +117,8 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_552_8" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contentCdt id="sc_tab_552_8" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">CDT</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
@@ -154,8 +155,8 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_557_8" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contenMercadeo id="sc_tab_557_8" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">MERCADEO</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
@@ -192,8 +193,8 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_979_10" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contentRecreacion id="sc_tab_979_10" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">RECREACIÓN</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
@@ -230,8 +231,8 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_134_3" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contentPlaneacion id="sc_tab_134_3" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">PLANEACIÓN</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
@@ -268,8 +269,8 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="sc_tab_023_2" class="sc_tabs_content">
+                                        </ng-template>
+                                        <ng-template #contentOtros id="sc_tab_023_2" class="sc_tabs_content">
                                             <h3 class="sc_title sc_title_regular">OTROS ARCHIVOS</h3>
                                             <div class="vc_empty_space hpx_14">
                                                 <span class="vc_empty_space_inner"></span>
@@ -306,7 +307,7 @@
                                                     <p>Resume example for a business school applicant</p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </ng-template>
                                     </div>
                                     <div class="vc_empty_space hpx_30">
                                         <span class="vc_empty_space_inner"></span>

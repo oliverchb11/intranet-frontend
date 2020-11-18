@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArchivosComponent } from './archivos/archivos.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -9,7 +10,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
   declarations: [ArchivosComponent],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    NgbModalModule
   ],
   exports:[ArchivosComponent]
 })
