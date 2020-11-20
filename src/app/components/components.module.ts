@@ -6,12 +6,13 @@ import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { EmpleoModule } from '../pages/empleo/empleo.module';
+import { ImagenComponent } from './imagen/imagen.component';
 
 
 
 
 @NgModule({
-  declarations: [SidebarComponent, NavbarComponent, Sidebar2Component, FooterComponent],
+  declarations: [SidebarComponent, NavbarComponent, Sidebar2Component, FooterComponent, ImagenComponent],
   imports: [
     CommonModule,
     AppRoutingModule,
@@ -20,7 +21,8 @@ import { EmpleoModule } from '../pages/empleo/empleo.module';
     SidebarComponent,
     Sidebar2Component,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ImagenComponent
   ]
 })
 export class ComponentsModule { }
